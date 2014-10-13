@@ -1,6 +1,6 @@
 # common
 ENV_NAME="DYAO_YELP"
-HOME_DIR="/Users/dyao"
+HOME_DIR=$HOME
 
 # ENV_NAME OPTIONS:
 # DYAO_YELP
