@@ -24,6 +24,11 @@
 " F4 : goback from tag                                                                               
 " F5 : file taglist sidebar                                                                          
 " F6 : file navigation sidebar                                                                       
+
+" Pathogen settings
+" call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
+call pathogen#helptags()
                                                                                                      
 " filetype on                                                                                        
 set nocompatible                                  " make vim less compatible with vi                 
@@ -67,7 +72,7 @@ nnoremap <F5> :TlistToggle<CR>
 let Tlist_Highlight_Tag_On_BufEnter = 0                                                              
                                                                                                      
 " File/directory navigation                                                                          
-"nnoremap <F6> :NERDTree<CR>
+nnoremap <F6> :NERDTree<CR>
 
 " Sign markers                                                                                       
 sign define information text=!> linehl=Warning texthl=Error icon=/path/to/information.xpm            
