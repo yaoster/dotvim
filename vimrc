@@ -95,7 +95,7 @@ nnoremap <C-p> :set paste!<CR>
 " home desktop tags and work tags
 "set tags=/home/yaoster/.vim/tags/stdlibcpp,/home/yaoster/.vim/tags/mysrc,/home/yaoster/.vim/tags/tmp,/home/daniely/.vim/tags/tmp,/home/daniely/.vim/tags/snapsrc,/home/daniely/.vim/tags/boost,/home/daniely/.vim/tags/
 "set tags=$HOME/.vim/tags;/,./tags;/
-set tags=/Users/dyao/.vim/tags/tmp
+set tags=.,/Users/dyao/.vim/tags/tmp
 
 " Color schemes
 highlight Folded term=standout ctermfg=6 ctermbg=0

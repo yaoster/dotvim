@@ -13,7 +13,7 @@ then
     alias dir="ls -al -G | more"
     alias duo="du -h -d 1"
     alias rm="rmtrash"
-    alias tmptags="/usr/local/bin/ctags -R --tag-relative=yes -f $HOME_DIR/.vim/tags/tmp .; ls -lh $HOME_DIR/.vim/tags/tmp"
+    export PATH=/usr/local/bin:$PATH
 elif [ "$ENV_NAME" == "LINUX" ]
 then
     alias ll="ls -lh --color=auto"
@@ -21,9 +21,9 @@ then
     alias dir="ls -al --color=always | more"
     alias duo="du -h --max-depth=1"
     alias rm="mv --target-directory ~/Recycle"
-    alias tmptags="ctags -R --tag-relative=yes -f $HOME_DIR/.vim/tags/tmp .; ls -lh $HOME_DIR/.vim/tags/tmp"
 fi
 
+alias tmptags="ctags -R --tag-relative=yes -f $HOME_DIR/.vim/tags/tmp .; ls -lh $HOME_DIR/.vim/tags/tmp"
 alias la="ls -a"
 alias gn="gnumeric"
 alias vi="vim"
